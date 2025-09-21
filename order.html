@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .rate-star {
+            color: #4F46E5; /* A shade of indigo */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gray-800">Kala Sansar</span>
+                </div>
+                <div class="hidden md:flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
+                    <div class="max-w-lg w-full lg:max-w-xs">
+                        <label for="search" class="sr-only">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <input id="search" name="search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Search Kala Sansar" type="search">
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="profile.html" class="text-gray-600 hover:text-indigo-600 font-medium">Profile</a>
+                    <a href="cart.html" class="text-gray-600 hover:text-indigo-600 font-medium flex items-center">
+                        <svg class="h-6 w-6 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        Cart
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Become a Seller</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold text-gray-800 bg-gray-300 inline-block px-6 py-2 rounded-md">ORDERS</h1>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Order Card 1 -->
+            <div class="bg-pink-50 border border-pink-200 rounded-lg p-4 shadow-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center">
+                    <div class="col-span-1">
+                        <img src="https://placehold.co/150x150/d1fae5/333?text=Art+Piece" alt="Madhubani Painting" class="rounded-md w-full h-auto object-cover">
+                    </div>
+                    <div class="col-span-1 sm:col-span-3">
+                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                             <div class="md:col-span-1">
+                                <h2 class="font-semibold text-lg text-gray-800">Madhubani Painting</h2>
+                                <p class="text-sm text-gray-600">size: Free</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-center">
+                                 <p class="font-semibold text-lg text-gray-800">₹499/-</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-right">
+                                 <div class="flex items-center justify-start md:justify-end mb-2">
+                                     <span class="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
+                                     <p class="font-semibold text-green-700">Delivered on Aug 22</p>
+                                 </div>
+                                 <p class="text-xs text-gray-500 mb-2 text-left md:text-right">your item has been delivered</p>
+                                 <a href="#" class="flex items-center justify-start md:justify-end text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                                    <span class="rate-star text-lg mr-1">★</span> Rate & Review Product
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Card 2 -->
+             <div class="bg-pink-50 border-2 border-blue-500 rounded-lg p-4 shadow-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center">
+                    <div class="col-span-1">
+                        <img src="https://placehold.co/150x150/e0e7ff/333?text=Shawl" alt="Ari Work Semi Pashmina Shawl" class="rounded-md w-full h-auto object-cover">
+                    </div>
+                    <div class="col-span-1 sm:col-span-3">
+                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                             <div class="md:col-span-1">
+                                <h2 class="font-semibold text-lg text-gray-800">Ari Work Semi Pashmina Shawl</h2>
+                                <p class="text-sm text-gray-600">size: Free</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-center">
+                                 <p class="font-semibold text-lg text-gray-800">₹1050/-</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-right">
+                                 <div class="flex items-center justify-start md:justify-end mb-2">
+                                     <span class="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
+                                     <p class="font-semibold text-green-700">Delivered on Jun 03</p>
+                                 </div>
+                                 <p class="text-xs text-gray-500 mb-2 text-left md:text-right">your item has been delivered</p>
+                                 <a href="#" class="flex items-center justify-start md:justify-end text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                                    <span class="rate-star text-lg mr-1">★</span> Rate & Review Product
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Card 3 -->
+            <div class="bg-pink-50 border border-pink-200 rounded-lg p-4 shadow-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center">
+                    <div class="col-span-1">
+                        <img src="https://placehold.co/150x150/fef3c7/333?text=Fabric" alt="Assamese Gamosa" class="rounded-md w-full h-auto object-cover">
+                    </div>
+                    <div class="col-span-1 sm:col-span-3">
+                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                             <div class="md:col-span-1">
+                                <h2 class="font-semibold text-lg text-gray-800">Assamese Gamosa</h2>
+                                <p class="text-sm text-gray-600">size: Free</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-center">
+                                 <p class="font-semibold text-lg text-gray-800">₹400/-</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-right">
+                                 <div class="flex items-center justify-start md:justify-end mb-2">
+                                     <span class="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
+                                     <p class="font-semibold text-green-700">Delivered on Mar 20</p>
+                                 </div>
+                                 <p class="text-xs text-gray-500 mb-2 text-left md:text-right">your item has been delivered</p>
+                                 <a href="#" class="flex items-center justify-start md:justify-end text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                                    <span class="rate-star text-lg mr-1">★</span> Rate & Review Product
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Card 4 -->
+            <div class="bg-pink-50 border border-pink-200 rounded-lg p-4 shadow-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 items-center">
+                    <div class="col-span-1">
+                        <img src="https://placehold.co/150x150/fee2e2/333?text=Saree" alt="Silk Saree" class="rounded-md w-full h-auto object-cover">
+                    </div>
+                    <div class="col-span-1 sm:col-span-3">
+                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                             <div class="md:col-span-1">
+                                <h2 class="font-semibold text-lg text-gray-800">Silk saree</h2>
+                                <p class="text-sm text-gray-600">size: Free</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-center">
+                                 <p class="font-semibold text-lg text-gray-800">₹1050/-</p>
+                             </div>
+                             <div class="md:col-span-1 text-left md:text-right">
+                                 <div class="flex items-center justify-start md:justify-end mb-2">
+                                     <span class="h-3 w-3 bg-green-500 rounded-full mr-2"></span>
+                                     <p class="font-semibold text-green-700">Delivered on Jan 05 2024</p>
+                                 </div>
+                                 <p class="text-xs text-gray-500 mb-2 text-left md:text-right">your item has been delivered</p>
+                                 <a href="#" class="flex items-center justify-start md:justify-end text-sm font-medium text-indigo-600 hover:text-indigo-800">
+                                    <span class="rate-star text-lg mr-1">★</span> Rate & Review Product
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-10 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <!-- Exclusive -->
+                <div class="col-span-2 sm:col-span-1 md:col-span-1">
+                    <h3 class="font-bold mb-4">Exclusive</h3>
+                    <p class="text-gray-400 mb-2 text-sm">Subscribe</p>
+                    <p class="text-gray-400 mb-4 text-sm">Get 10% off your first order</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="w-full bg-gray-700 text-white rounded-l-md py-2 px-3 text-sm focus:outline-none">
+                        <button type="submit" class="bg-gray-600 hover:bg-gray-500 rounded-r-md px-3">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="text-gray-400">111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.</li>
+                        <li class="text-gray-400">exclusive@gmail.com</li>
+                        <li class="text-gray-400">+88015-88888-9999</li>
+                    </ul>
+                </div>
+                <!-- Account -->
+                <div>
+                    <h3 class="font-bold mb-4">Account</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="profile.html" class="text-gray-400 hover:text-white">My Account</a></li>
+                        <li><a href="login.html" class="text-gray-400 hover:text-white">Login / Register</a></li>
+                        <li><a href="cart.html" class="text-gray-400 hover:text-white">Cart</a></li>
+                        <li><a href="wishlist.html" class="text-gray-400 hover:text-white">Wishlist</a></li>
+                        <li><a href="items.html" class="text-gray-400 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Link -->
+                <div>
+                    <h3 class="font-bold mb-4">Quick Link</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms Of Use</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="contactus.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Download App -->
+                <div>
+                    <h3 class="font-bold mb-4">Download App</h3>
+                    <p class="text-xs text-gray-500 mb-2">Save $3 with App New User Only</p>
+                    <div class="flex space-x-2">
+                        <img src="https://placehold.co/80x80/fff/000?text=QR" alt="QR Code" class="rounded">
+                        <div class="flex flex-col space-y-2">
+                             <a href="#"><img src="https://placehold.co/100x30/000/fff?text=Google+Play" alt="Google Play" class="h-8"></a>
+                             <a href="#"><img src="https://placehold.co/100x30/000/fff?text=App+Store" alt="App Store" class="h-8"></a>
+                        </div>
+                    </div>
+                     <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">F</a>
+                        <a href="#" class="text-gray-400 hover:text-white">T</a>
+                        <a href="#" class="text-gray-400 hover:text-white">I</a>
+                        <a href="#" class="text-gray-400 hover:text-white">L</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

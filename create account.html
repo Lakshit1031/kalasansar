@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account - Kala Sansar</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS for specific styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FEF2F2; /* A very light pink, similar to the screenshot */
+        }
+        /* A custom font for the brand name to mimic the style */
+        .font-brand {
+            font-family: 'Teko', sans-serif;
+        }
+        /* Custom border color for footer columns */
+        .footer-border {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        /* Hindi text style */
+        .hindi-text {
+            font-size: 3.5rem; /* Larger font size for the Hindi text */
+            font-weight: 700;
+            line-height: 1.2;
+            color: #F87171; /* A shade of red */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="w-8 h-8 bg-gray-800 rounded-full"></span>
+                    <h1 class="text-2xl font-bold font-brand tracking-wider">KALA SANSAR</h1>
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex items-center border border-gray-300 rounded-full w-full max-w-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type="text" placeholder="search Kala Sansar" class="py-2 w-full focus:outline-none rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                </svg>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="hidden md:block text-gray-600 hover:text-black font-medium px-3 py-2 rounded-lg">Home</a>
+                <a href="contactus.html" class="hidden md:block text-gray-600 hover:text-black font-medium px-3 py-2 rounded-lg">Contact</a>
+                <a href="#" class="hidden md:block text-gray-600 hover:text-black font-medium px-3 py-2 rounded-lg">About</a>
+                <a href="login.html" class="bg-gray-800 text-white font-medium px-5 py-2 rounded-lg hover:bg-black transition duration-300">Sign Up</a>
+                <button class="text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content: Signup Form -->
+    <main class="flex items-center justify-center min-h-screen py-12 px-4">
+        <div class="w-full max-w-5xl bg-pink-100 p-4 sm:p-8 rounded-2xl shadow-lg">
+            <div class="flex flex-col md:flex-row bg-white shadow-xl rounded-xl overflow-hidden">
+
+                <!-- Left Panel: Welcome Message -->
+                <div class="w-full md:w-1/2 bg-gray-800 text-white p-8 sm:p-12 flex flex-col justify-center items-center text-center">
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                             <span class="w-8 h-8 bg-gray-800 rounded-full"></span>
+                        </div>
+                        <span class="text-white text-lg font-brand">SANSAR</span>
+                    </div>
+                    <h2 class="text-3xl font-light mb-4">Welcome to.....</h2>
+                    <div class="font-bold">
+                        <span class="hindi-text">कला</span>
+                        <span class="text-5xl font-brand tracking-widest"> SANSAR</span>
+                    </div>
+                </div>
+
+                <!-- Right Panel: Form -->
+                <div class="w-full md:w-1/2 p-8 sm:p-12">
+                    <h2 class="text-3xl font-bold mb-2">Create an account</h2>
+                    <p class="text-gray-500 mb-8">Enter your details below</p>
+
+                    <form action="#" method="POST" id="signupForm">
+                        <div class="space-y-6">
+                            <input type="text" placeholder="Name" class="w-full py-3 border-b-2 border-gray-200 focus:border-red-400 focus:outline-none transition duration-300">
+                            <input type="text" placeholder="Email or Phone Number" class="w-full py-3 border-b-2 border-gray-200 focus:border-red-400 focus:outline-none transition duration-300">
+                            <input type="password" placeholder="Password" class="w-full py-3 border-b-2 border-gray-200 focus:border-red-400 focus:outline-none transition duration-300">
+                        </div>
+
+                        <div class="mt-8 space-y-4">
+                            <button type="submit" class="w-full bg-red-500 text-white py-3 rounded-lg font-semibold hover:bg-red-600 transition duration-300">Create Account</button>
+                            <button type="button" class="w-full flex items-center justify-center py-3 border border-gray-300 rounded-lg font-medium text-gray-600 hover:bg-gray-50 transition duration-300">
+                                <img src="https://www.google.com/favicon.ico" alt="Google icon" class="w-5 h-5 mr-3">
+                                Sign up with Google
+                            </button>
+                        </div>
+
+                        <p class="text-center text-gray-500 mt-8">
+                            Already have account? <a href="#" class="text-red-500 font-semibold hover:underline">Log in</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <!-- Column 1: Exclusive -->
+                <div class="pr-4">
+                    <h3 class="font-bold text-white text-lg mb-4">Exclusive</h3>
+                    <p class="mb-4">Subscribe</p>
+                    <p class="text-sm mb-4">Get 10% off your first order</p>
+                    <div class="flex border border-gray-400 rounded-md p-1">
+                        <input type="email" placeholder="Enter your email" class="bg-transparent w-full focus:outline-none px-2">
+                        <button class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 12h14" /></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Column 2: Support -->
+                <div class="pr-4 lg:border-l lg:border-r footer-border lg:pl-8">
+                    <h3 class="font-bold text-white text-lg mb-4">Support</h3>
+                    <p class="mb-4">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p class="mb-4">exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+
+                <!-- Column 3: Account -->
+                <div class="pr-4 lg:border-r footer-border lg:pl-8">
+                    <h3 class="font-bold text-white text-lg mb-4">Account</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white">My Account</a></li>
+                        <li><a href="#" class="hover:text-white">Login / Register</a></li>
+                        <li><a href="#" class="hover:text-white">Cart</a></li>
+                        <li><a href="#" class="hover:text-white">Wishlist</a></li>
+                        <li><a href="#" class="hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Quick Link -->
+                <div class="pr-4 lg:border-r footer-border lg:pl-8">
+                     <h3 class="font-bold text-white text-lg mb-4">Quick Link</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms Of Use</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 5: Download App -->
+                <div class="lg:pl-8">
+                    <h3 class="font-bold text-white text-lg mb-4">Download App</h3>
+                    <p class="text-xs text-gray-400 mb-3">Save $3 with App New User Only</p>
+                    <div class="flex items-center space-x-2">
+                        <!-- QR Code Placeholder -->
+                        <div class="w-20 h-20 bg-white p-1 rounded">
+                             <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=KalaSansarApp" alt="QR Code" class="w-full h-full">
+                        </div>
+                        <div class="space-y-2">
+                            <a href="#"><img src="https://placehold.co/110x40/000000/FFFFFF?text=Google+Play" alt="Get it on Google Play" class="rounded"></a>
+                            <a href="#"><img src="https://placehold.co/110x40/000000/FFFFFF?text=App+Store" alt="Download on the App Store" class="rounded"></a>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="hover:text-white">f</a>
+                        <a href="#" class="hover:text-white">...</a>
+                        <a href="#" class="hover:text-white">in</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center text-gray-500 border-t footer-border mt-12 pt-6">
+                &copy; 2024 Kala Sansar. All right reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to prevent form submission for this demo
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Account creation functionality is for demonstration only.');
+        });
+    </script>
+
+</body>
+</html>

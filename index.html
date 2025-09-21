@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Sansar - Indian Handicrafts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <header>
+            <div class="logo">Kala Sansar</div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="search Kala Sansar">
+                <i class="fas fa-microphone"></i>
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="user-actions">
+                <button class="btn-login" onclick="location.href='login.html'">Login</button>
+                <button class="btn-cart" onclick="location.href='cart.html'"><i class="fas fa-shopping-cart"></i> cart</button>
+                <button class="btn-seller">Become a Seller</button>
+            </div>
+        </header>
+
+        <nav class="category-nav">
+            <div class="category-item">
+                <a href="textile.html">
+                <img src="images.jpg" alt="Textiles">
+                <span>Textiles</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="painting.html">
+                <img src="Sikkim (Thangka Paintings & Carpet Weaving)/download.jpeg" alt="Paintings">
+                <span>Paintings</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="metalcraft.html">
+                <img src="Chattisgarh/Dhokra Metal Craft/images.jpeg" alt="Metal Crafts">
+                <span>Metal Crafts</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="baboo.html">
+                <img src="Meghalaya (Bamboo & Cane Work)/images (1).jpeg" alt="Bamboo & Cane Crafts">
+                <span>Bamboo & Cane Crafts</span>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="embroidery.html">
+                <img src="embro.jpg" alt="Embroidery">
+                <span>Embroidery</span>
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <section class="slider-container">
+                <div class="slide fade">
+                    <img src="embro.jpg" alt="Embroidery Banner">
+                    <div class="slide-text">
+                        <h2>Embroidery</h2>
+                        <p>From ₹500/-</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                     <img src="/Rajasthan/(Blue Pottery/download (4).jpeg" alt="Pottery Banner">
+                     <div class="slide-text">
+                        <h2>Pottery</h2>
+                        <p>From ₹400/-</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section class="product-grid">
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Andhra Pradesh/Budithi Bell & Brass Craft/download (1).jpeg" alt="Brass Planter">
+                    <h3>South Indian Art Brass Planter</h3>
+                    <p class="price">₹1330/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Rajasthan/Kathputli Puppetry/download (1).jpeg" alt="Rajasthani Kathputlis">
+                    <h3>Rajasthani Kathputlis</h3>
+                    <p class="price">₹450/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Manipur (Kauna Grass Craft)/download (1).jpeg" alt="Kauna Grass Bags">
+                    <h3>Kauna Grass Bags</h3>
+                    <p class="price">₹550/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Bihar/Madhubani Painting/download (1).jpeg" alt="Madhubani Painting">
+                    <h3>Madhubani Painting</h3>
+                    <p class="price">₹499/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Kerala/(Coir Craft & Kathakali Masks)/images.jpeg" alt="Kerala Craft">
+                    <h3>Kerala Craft</h3>
+                    <p class="price">₹550/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="/Rajasthan/(Blue Pottery/download (1).jpeg" alt="Blue Pottery">
+                    <h3>Blue Pottery</h3>
+                    <p class="price">₹550/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Assam/Assamese Gamusa/download.jpeg" alt="Assamese Gamosa">
+                    <h3>Assamese Gamosa</h3>
+                    <p class="price">₹400/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-trash-alt delete-icon"></i>
+                    <img src="Odisha/Silver Filigree/download.jpeg" alt="Silver Filigree Peacock">
+                    <h3>Silver Filigree Peacock</h3>
+                    <p class="price">₹599/-</p>
+                    <button class="btn-add-to-cart">Add To Cart</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-column">
+                <h3>Exclusive</h3>
+                <p>Subscribe</p>
+                <small>Get 10% off your first order</small>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <p>111 ajay sarani, Dhaka, <br> DH 1515, Bangladesh.</p>
+                <p>exclusive@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+            <div class="footer-column">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="profile.html">My Account</a></li>
+                    <li><a href="login.html">Login / Register</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="items.html">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Download App</h3>
+                <small>Save $3 with App New User Only</small>
+                <div class="app-download">
+                    <img src="https://i.imgur.com/QRvDdi3.png" alt="QR Code" class="qr-code">
+                    <div class="app-stores">
+                        <img src="https://i.imgur.com/2GfBv2e.png" alt="Google Play">
+                        <img src="https://i.imgur.com/2OIpEfL.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Sansar - Explore the Creativity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7ececff; /* A light pinkish background similar to the screenshot */
+        }
+        .header-top {
+            background-color: #646161ff;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .search-bar {
+            border: 1px solid #D1D5DB;
+        }
+        .creativity-banner {
+            background-color: #131415ff; /* Dark gray */
+            color: white;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #0e0d0dff; /* Terracotta-like border */
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .add-to-cart-btn {
+            background-color: #1F2937; /* Darker gray */
+            color: white;
+        }
+        .footer {
+            background-color: #1F2937;
+            color: #D1D5DB;
+        }
+        .footer-title {
+            color: white;
+            font-weight: 600;
+        }
+        .footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="w-full">
+
+        <!-- Header Section -->
+        <header>
+            <!-- Top Navigation Bar -->
+            <div class="header-top py-2">
+                <div class="container mx-auto px-4 flex justify-between items-center">
+                    <div class="flex items-center space-x-2">
+                        <a href="index.html" class="text-xl font-bold text-gray-800">कला SANSAR</a>
+                    </div>
+                    <div class="flex-1 max-w-lg mx-4 hidden md:flex items-center search-bar rounded-md">
+                        <i data-lucide="search" class="w-5 h-5 text-gray-500 mx-3"></i>
+                        <input type="text" placeholder="search कला Sansar" class="w-full py-2 bg-transparent focus:outline-none">
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="p-2 rounded-full hover:bg-gray-100">
+                           <i data-lucide="camera" class="w-5 h-5 text-gray-600"></i>
+                        </button>
+                         <div class="relative group">
+                            <button class="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100">
+                                <i data-lucide="user-circle-2" class="w-6 h-6 text-gray-700"></i>
+                                <span>Profile</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-600"></i>
+                            </button>
+                            <!-- Dropdown for Profile - hidden by default -->
+                            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden group-hover:block">
+                                <a href="profile.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">My Account</a>
+                                <a href="order.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Order</a>
+                                <a href="wishlist.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Wishlist</a>
+                                <a href="login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+                            </div>
+                        </div>
+                        <a href="cart.html" class="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100">
+                            <i data-lucide="shopping-cart" class="w-6 h-6 text-gray-700"></i>
+                            <span>Cart</span>
+                        </a>
+</a>
+
+                        <button class="bg-orange-400 text-white px-4 py-2 rounded-md font-semibold hover:bg-orange-500 hidden sm:block">
+                            Become a Seller
+                        </button>
+                        <button class="p-2 rounded-md hover:bg-gray-100 md:hidden">
+                            <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creativity Banner -->
+            <div class="py-6 lg:py-10">
+                <div class="container mx-auto px-4 flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-gray-800 p-2 rounded-md">
+                           <h2 class="text-white text-2xl font-bold">कला <br> Sansar</h2>
+                        </div>
+                        <div class="creativity-banner px-6 py-3 rounded-md">
+                            <h3 class="text-2xl md:text-4xl font-bold tracking-wider">Explore the Creativity</h3>
+                        </div>
+                    </div>
+                    <div class="hidden md:block text-right">
+                        <!-- Placeholder for Crave Painting Logo -->
+                        <div class="text-red-500">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="150" height="60" viewBox="0 0 150 60">
+                                <text x="0" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#f61008ff">CRAVE</text>
+                                <text x="0" y="55" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#f20c04ff">PAINTING</text>
+                                <path d="M90 5 C 100 20, 110 0, 120 15 S 140 -5, 150 20" stroke="#ef130bff" stroke-width="2" fill="none"/>
+                                <circle cx="115" cy="20" r="3" fill="#fb1008ff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="container mx-auto px-4 py-8">
+            
+            <!-- Product Grid Section 1 -->
+            <section class="border-t-4 border-b-4 border-orange-300 py-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Product Card 1 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                             <a href="items.html"> <img src="Chattisgarh/Bastar Iron Craft/download (1).jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+
+                             <button class="absolute top-4 right-4 p-1.5 bg-white rounded-full shadow-md hover:bg-gray-100">
+                                <i data-lucide="trash-2" class="w-5 h-5 text-gray-600"></i>
+                             </button>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Baster Iron Craft</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1000/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                             <a href="items.html"> <img src="Assam/Muga Silk Weaving/download (1).jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                            <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Silk saree</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                             <a href="items.html"> <img src="Harayana/Surajkund Terracotta/download.jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Terracotta Handicrafts</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹750/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                            <a href="items.html"> <img src="file_zip/project pictures/J & K/Pashmina Shawls)/download (1).jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Ari Work Semi Pashmina Shawl</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Product Grid Section 2 (Identical to first as per screenshot) -->
+            <section class="border-b-4 border-orange-300 py-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Product Card 5 -->
+                   <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                            <a href="items.html"> <img src="J & K/Pashmina Shawls)/download.jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Ari Work Semi Pashmina Shawl</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                             <a href="items.html"> <img src="file_zip/project pictures/Kharnatak/Mysore Silk/download.jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                            <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Silk saree</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                            <a href="items.html"> <img src="file_zip/project pictures/J & K/Pashmina Shawls)/download (1).jpeg" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Ari Work Semi Pashmina Shawl</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="product-card rounded-lg overflow-hidden flex flex-col">
+                        <div class="relative p-2">
+                             <a href="items.html"> <img src="file_zip/project pictures/J & K/Pashmina Shawls)/7_2_ade3c2e5-43e1-404f-857f-ddfea06ebb73.webp" 
+                             alt="Baster Iron Craft" 
+                             class="w-full h-64 object-cover">
+                         </a>
+                        </div>
+                        <div class="p-4 border-t border-gray-200 text-center flex-grow flex flex-col">
+                           <button class="add-to-cart-btn w-full py-2 rounded-md mb-3 flex items-center justify-center space-x-2 hover:bg-gray-900 transition-colors">
+                               <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                               <a href="cart.html">Add to cart</a>
+                           </button>
+                           <h4 class="font-semibold text-lg text-gray-800">Ari Work Semi Pashmina Shawl</h4>
+                           <p class="text-gray-600 font-bold mt-1">₹1050/-</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer pt-16 pb-8">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <!-- Column 1: Exclusive -->
+                    <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                        <h5 class="footer-title mb-4">Exclusive</h5>
+                        <p class="mb-2">Subscribe</p>
+                        <p class="text-sm mb-4">Get 10% off your first order</p>
+                        <div class="flex items-center border border-gray-500 rounded-md p-1">
+                            <input type="email" placeholder="Enter your email" class="bg-transparent w-full p-1 focus:outline-none text-white">
+                            <button class="text-gray-400 hover:text-white">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Support -->
+                    <div>
+                        <h5 class="footer-title mb-4">Support</h5>
+                        <ul class="space-y-2 text-sm">
+                            <li>III Bijoy Sarani, Dhaka,</li>
+                            <li>DH 1515, Bangladesh.</li>
+                            <li class="pt-2">exclusive@gmail.com</li>
+                            <li>+88015-88888-9999</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Account -->
+                    <div>
+                        <h5 class="footer-title mb-4">Account</h5>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:underline">My Account</a></li>
+                            <li><a href="#" class="hover:underline">Login / Register</a></li>
+                            <li><a href="#" class="hover:underline">Cart</a></li>
+                            <li><a href="#" class="hover:underline">Wishlist</a></li>
+                            <li><a href="#" class="hover:underline">Shop</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Quick Link -->
+                    <div>
+                        <h5 class="footer-title mb-4">Quick Link</h5>
+                        <ul class="space-y-2 text-sm">
+                            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+                            <li><a href="#" class="hover:underline">FAQ</a></li>
+                            <li><a href="#" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 5: Download App -->
+                    <div class="text-center md:text-left">
+                        <h5 class="footer-title mb-4">Download App</h5>
+                        <p class="text-xs mb-2">Save $3 with App New User Only</p>
+                        <div class="flex gap-2 items-center justify-center md:justify-start">
+                            <!-- QR Code Placeholder -->
+                            <div class="bg-white p-1 rounded-md">
+                                <img src="https://placehold.co/80x80/ffffff/000000?text=QR" alt="QR Code">
+                            </div>
+                            <div class="space-y-2">
+                                <a href="#"><img src="https://placehold.co/100x30/000000/FFFFFF?text=Google+Play" alt="Google Play" class="rounded"></a>
+                                <a href="#"><img src="https://placehold.co/100x30/000000/FFFFFF?text=App+Store" alt="App Store" class="rounded"></a>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+                            <a href="#"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                            <a href="#"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                            <a href="#"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                            <a href="#"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
